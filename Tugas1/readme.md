@@ -1,6 +1,6 @@
 ## Tugas 1
 
--[Tugas 1]()
+-[Tugas 1](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/blob/main/Tugas1/readme.md#tugas-1-1)
 
 
 ## Tugas 1
