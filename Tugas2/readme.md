@@ -1,6 +1,7 @@
 ## Tugas2
 
 -[Bootting Process](#booting-process) 
+
 -[Identifikasi Spek Laptop](#identifikasi-spek-laptop)
 
 
