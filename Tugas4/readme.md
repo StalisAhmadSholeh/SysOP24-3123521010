@@ -1,8 +1,8 @@
 ## Tugas4 
-1. no1
-2. no2
-3. no3
-4. no4
+1. [Nomor1](#1)
+2. [Nomor2](#2)
+3. [Nomor3](#3)
+4. [Nomor4](#4)
 
 [no1]: #no1
 1.Buatlah presentasi langkah demi langkah tentang siklus CPU (fetch,decode,execute) utk mengeksekusi sebuah program. Jelaskan juga peran dari Bahasa pemrograman dan compiler, begitu juga dengan peran dari Sistem Operaso. Gunakan referensi : [Video referensi 1](https://www.youtube.com/watch?v=Z5JC9Ve1sfI) dan [Video referensi 2](https://www.youtube.com/watch?v=jFDMZpkUWCw)
@@ -134,8 +134,9 @@ Mengatur Sistem Kerja Perangkat
 
 [no2]: #no2
 2. Baca dan pahami rangkuman materi OS: [Materi Intro to OS-01](https://github.com/ferryastika/OS-01)
-3. Jalankan VM Debian anda, lalu lakukan clone https://github.com/ferryastika/flops-iops. Compile dan eksekusi sesuai petunjuk. Sesuiakan jumlah thread dengan jumlah CPU yang ada di VM Debianmu. Catat hasilnya dan jelaskan arti dari hasil ekskusi. Lakukan sebanyak 5 kali. Bandingkan hasilnya anatar temanmu. Buat Plot perbandinnga hasil untuk masing-masing PC di tiap kelompokmu. Analisa hasil percobaan tadi dan beri kesimpulan tentang IOPS dan FLOPS.
 [no3]: #no3
+3. Jalankan VM Debian anda, lalu lakukan clone https://github.com/ferryastika/flops-iops. Compile dan eksekusi sesuai petunjuk. Sesuiakan jumlah thread dengan jumlah CPU yang ada di VM Debianmu. Catat hasilnya dan jelaskan arti dari hasil ekskusi. Lakukan sebanyak 5 kali. Bandingkan hasilnya anatar temanmu. Buat Plot perbandinnga hasil untuk masing-masing PC di tiap kelompokmu. Analisa hasil percobaan tadi dan beri kesimpulan tentang IOPS dan FLOPS.
+
  
 ![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/5b4d656e-8515-4493-b161-287dfd6952af)
 ![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/13354f59-caea-4425-9bba-78b26ac534d8)
