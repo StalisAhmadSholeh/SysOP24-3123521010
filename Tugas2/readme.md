@@ -41,7 +41,7 @@ Proses di mana pengguna dapat memasukkan kredensial mereka dan mulai menggunakan
 
 
 ## Identifikasi Spek Laptop
-[Identifikasi Spek Laptop]: #Spek-laptop
+[Identifikasi Spek Laptop]: #spek-laptop
 
 ![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/39f39394-2bbe-44fb-b4a5-2243ef3174bd)
 
