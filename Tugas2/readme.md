@@ -1,8 +1,8 @@
 ## Tugas2
 
 -[Bootting Process](#booting-process)
+-[Identifikasi Spek Laptop](#identifikasi-spek-laptop)
 
--[Identifikasi Spek Laptop](#spek-laptop)
 
 
 ## Booting Process 
