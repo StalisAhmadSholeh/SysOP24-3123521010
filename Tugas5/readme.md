@@ -3,7 +3,7 @@
 -[Belajar tentang shell programming](#Belajar-tentang-shell-programming)
 
 ## Daftar Isi
-
+- [SAMPUL](#sistem-operasi)
 - [TUGAS PENDAHULUAN](#tugas-pendahuluan)
 - [PERCOBAAN](#percobaan)
 - [LATIHAN](#latihan)
@@ -11,7 +11,7 @@
 
 
 <div align="center">
-  <h1 style="text-align: center;font-weight: bold"><br>Sistem Operasi</h1
+  <h1 style="text-align: center;font-weight: bold"><br>Sistem Operasi</h1 {#sistem-operasi}
   <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
 </div>
 <br/>
