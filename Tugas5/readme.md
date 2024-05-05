@@ -2,6 +2,13 @@
 
 -[Belajar tentang shell programming](#Belajar-tentang-shell-programming)
 
+## Daftar Isi
+
+- [TUGAS PENDAHULUAN](#tugas-pendahuluan)
+- [PERCOBAAN](#percobaan)
+- [LATIHAN](#latihan)
+- [KESIMPULAN](#kesimpulan)
+
 
 <div align="center">
   <h1 style="text-align: center;font-weight: bold"><br>Sistem Operasi</h1
@@ -102,7 +109,7 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
 * Perintah ``uniq``
   Digunakan untuk menghilangkan baris-baris berurutan yang mengalami duplikasi, biasanya digabungkan dalam pipeline dengan ``sort``.
 
-## TUGAS PENDAHULUAN:
+## TUGAS PENDAHULUAN
 
 ## Jawablah pertanyaan-pertanyaan di bawah ini :
 
@@ -121,7 +128,7 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
 <br>uniq : Digunakan untuk menghilangkan baris-baris berurutan yang mengalami duplikasi, biasanya digabungkan dalam pipeline dengan sort
 
 
-## PERCOBAAN:
+## PERCOBAAN
 
 1. Login sebagai user.
 2. Bukalah Console Terminal dan lakukan percobaan-percobaan di bawah ini. Perhatikan hasil setiap percobaan.
@@ -311,7 +318,7 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
 ![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/84fbc0b5-e69b-490f-93f2-64e6cdc03ed9)
    <br> $ cat > kelas1.txt: Perintah ini membuka editor untuk membuat atau mengedit file bernama kelas1.txt
 
-## LATIHAN:
+## LATIHAN
 
 1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output   ke file baru.<br>![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/5fa03a83-a785-4716-adea-c45d683f41d5)
 <br>Keterangan : Perintah ls untuk menampilkan daftar file,  perintah “>”  untuk mengarahkan output perintah ke file baru
@@ -377,8 +384,4 @@ Redirection :
 Pipeline :
 - Pipa adalah mekanisme di sistem operasi UNIX/Linux yang memungkinkan keluaran dari satu program digunakan sebagai masukan untuk program lainnya secara berurutan.
 - Pipa menggunakan operator '|' untuk menghubungkan beberapa perintah bersama-sama, sehingga keluaran dari perintah pertama menjadi masukan bagi perintah kedua, dan seterusnya.
-LAPORAN RESMI:
-1.	Analisa hasil percobaan 1 sampai dengan 4, untuk setiap perintah jelaskan tampilannya.
-2.	Kerjakan latihan diatas dan analisa hasilnya
-3.	Berikan kesimpulan dari praktikum ini.
-Kesimpulan praktikum tersebut adalah kitab isa tau tentang perintah pembelokan standart input dan standartoutput, dan tau tentang perintah dasar seperti grep, wc, sort, cut dan uniq
+
