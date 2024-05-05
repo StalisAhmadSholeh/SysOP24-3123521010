@@ -1,10 +1,12 @@
 ## Tugas10
 
--[forking, orphan, zombie](#forking,-orphan,-zombie)
+-[forking, orphan, zombi](#cloning)
 
--[Producer-Consumen Problem in C](Producer-Consumen-Problem-in-C)
 
-## forking, orphan, zombie
+-[Producer Consumen Problem in C](#producer-consumen)
+
+## cloning
+
 Langkah pertama yaitu clone terlebih dahulu ke github dengan mengetik git clone https://github.com/ferryastika/operatingsystem.git
 lalu masuk ke directory operatingsystem dengan mengetik cd operatingsyystem lalu menjalankan prooses forking dengan mengetikan perintah ./forking.exe, Perintah g++ forking.c -o forking.exe adalah perintah untuk mengompilasi file sumber C yang disebut forking.c menggunakan compiler g++ dan menghasilkan executable dengan nama forking.exe.  untuk orphan dan zombie proses nya sama 
 ![pf1](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/59f3882e-6622-46cc-a798-720ed9364e05)
@@ -13,7 +15,7 @@ lalu masuk ke directory operatingsystem dengan mengetik cd operatingsyystem lalu
 orphan.c output program tersebut yaitu menjalankan Parent process dan Child process
 zombie.c output program tersebut yaitu Program ini membuat proses menggunakan fork(), dan jika proses tersebut parent process, maka ia akan tidur selama 60 detik (sleep(60)). Namun, jika proses tersebut adalah child process, maka program akan keluar secara langsung
 
-## Producer-Consumen Problem in C
+## Producer Consumen
 
 printf (“HELLO WORD!”); Bagian terbaik tentang pemrograman komputer adalah semua masalahnya berhubungan dengan dunia nyata; program dan perangkat lunak komputer adalah solusi untuk memenuhi kebutuhan sehari-hari Anda dan saya mulai dari pemesanan makanan online, belanja, media sosial, pemesanan tiket, dan lainnya!
 
