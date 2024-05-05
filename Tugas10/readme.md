@@ -20,7 +20,7 @@ zombie.c output program tersebut yaitu Program ini membuat proses menggunakan fo
 printf (“HELLO WORD!”); Bagian terbaik tentang pemrograman komputer adalah semua masalahnya berhubungan dengan dunia nyata; program dan perangkat lunak komputer adalah solusi untuk memenuhi kebutuhan sehari-hari Anda dan saya mulai dari pemesanan makanan online, belanja, media sosial, pemesanan tiket, dan lainnya!
 
 Jadi, Misalkan Anda adalah pemilik toko Roti bernama “Bakes and Bytes”; dan kamu bisa membuat maksimal 50 kue karena kamu belum mempunyai oven yang besar. Sekarang, Anda memiliki beberapa pelanggan untuk membelinya, tapi mari kita pertimbangkan hanya satu pelanggan. Toko roti Anda canggih dan karenanya memiliki sistem manajemen yang hebat seperti kode yang diberikan.
-
+```
 //Reference: https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem
 
 int OVEN_SIZE = 50;
@@ -68,7 +68,7 @@ procedure customer()
         buy_cakes(cakes);
     }
 }
-
+```
 
 penjelasan dari kode di atas
 1. Jika toko roti Anda memiliki kue==0; lalu Anda mengirim pesan ke semua pelanggan Anda bahwa “sleep();”
@@ -110,6 +110,7 @@ S++;
 }
 
 1 Produsen, 1 konsumen masalah:
+```
 // PART 1/4
 Assumption: Buffer SIZE = 1
 #include<stdio.h>
@@ -120,9 +121,9 @@ void *Producer(); // Make Declaration of Producer
 void *Consumer(); // Make Declaration of Consumer
 sem_t empty, full; //Declare semaphores to be used
 int data; // data variable
-
+```
 Bahasa C sangat kuat. Ini memiliki perpustakaan yang bagus untuk Thread Programing. Seperti di sini dalam kasus kami; masalahnya adalah sinkronisasi proses, kita memerlukan beberapa proses yang berjalan secara bersamaan. Jadi kami menggunakan file header yang berbeda seperti pthread.h dan semaphore.h selain dari 'Studio.h' 
-
+```
 //PART 2/4
 int main()
 {
@@ -137,7 +138,7 @@ pthread_join(ptid,NULL); // Line 7
 pthread_join(ctid,NULL); // Line 8
 printf("\nMain done\n");
 }
-
+```
 Penjelasan:
 Baris-1: Buat instance ptid(ID proses induk) dan ctid(ID proses anak) dari pthread_t
 
@@ -154,7 +155,7 @@ Baris 7 dan 8:
 Panggilan sistem pthread_join (ptid,NULL); memastikan bahwa thread berikutnya menyelesaikan eksekusinya hanya setelah selesainya thread ptid yang diberikan.
 Panggilan sistem pthread_join (ctid,NULL); memastikan bahwa thread berikutnya
 menyelesaikan eksekusinya hanya setelah selesainya thread ctid yang diberikan.
-
+```
 //PART 3/4
 void *Producer()
 {
@@ -176,7 +177,7 @@ sem_post(&full);
 printf("\nProducer: %d",data);
 }
 }
-
+```
 Penjelasan:
 Fungsi Produser berfungsi sebagai berikut:
 
@@ -187,7 +188,7 @@ Sekarang, ini menunjukkan bahwa ruang kosong di buffer berkurang 1. Kemudian ope
 Namun karena fungsi wait diterapkan pada lock, maka fungsi tersebut berkurang menjadi nol sehingga tidak ada proses lain yang dapat masuk.
 
 Setelah barang dimasukkan ke dalam buffer, operasi sinyal (sem_post) dilakukan pada 'sm' dan penuh. Yang pertama menunjukkan bahwa proses konsumen sekarang dapat bertindak dan yang terakhir menunjukkan bahwa buffer sudah penuh sebesar 1.
-
+```
 //PART 4/4
 void *Consumer()
 {
@@ -209,7 +210,7 @@ printf("\nConsumed: %d",data);
 }
 printf("\nThe total of 100 iterations is %d\n",total);
 }
-
+```
 Penjelasan:
 Operasi menunggu dilakukan secara penuh. Hal ini menandakan item yang ada di buffer berkurang 1. Kemudian operasi wait dilakukan pada mutex sehingga proses produser tidak dapat ikut campur.
 
@@ -224,7 +225,7 @@ kode di bawah ini menggambarkan Masalah 1 Produsen dan 3 Konsumen.
 PART 1/4
 Assumption: Buffer Size = 1
 We manually define the 3 consumers the consume exactly one-third of the items produced by the Producer for ease of Understanding.
-
+```
 #include<stdio.h>
 #include<pthread.h>
 #include<semaphore.h>
@@ -233,14 +234,14 @@ void *Producer();
 void *Consumer();
 sem_t empty, full,sm;
 int data;
-
+```
 Penjelasan:
 Ketika ada banyak konsumen, masalah sinkronisasi sebenarnya muncul. Untuk itu kita akan menulis logika kode kita dengan beberapa asumsi:
 
 Ukuran Buffer sama dengan 1. (Anda dapat mengimplementasikan buffer berukuran 'n' dengan bantuan array. Namun dengan menjaga kode tetap rapi dan sederhana; kita dapat memahami masalah ini dengan lebih baik)
 
 Kami secara eksplisit mendefinisikan bahwa ketiga konsumen tersebut akan mengambil tepat 1/3 bagian dari barang yang diproduksi (untuk konsumen 'n', 1/n bagian) untuk menghindari penggunaan beberapa semaphore.
-
+```
 int main()
 {
 pthread_t ptid, ctid1, ctid2, ctid3;
@@ -261,7 +262,7 @@ pthread_join(ctid2,NULL);
 pthread_join(ctid3,NULL);
 printf("\nMain done\n");
 }
-
+```
 Penjelasan:
 Di sini, 4 thread berbeda dibuat yaitu Produser(ptid) dan Konsumen( dengan ctid1, ctid2, ctid3). Bersamaan dengan pembuatan, kami meneruskan nomor identifikasi unik sebagai variabel a,b, dan c ke masing-masing thread konsumen.
 
@@ -280,7 +281,7 @@ Misalkan Producer Thread masuk ke Busy Waiting terlebih dahulu, kemudian Consume
 Perulangan produser sebanyak 30 kali. Konsumen-1, Konsumen-2, Konsumen-3 akan berulang tepat 10 kali dan masing-masing akan mengonsumsi tepat 10 item.
 
 Mutex Lock digunakan untuk setiap proses.
-
+```
 void *Producer()
 {
 int produced;
@@ -313,7 +314,7 @@ sem_post(&empty);
 }
 printf("\nThe total of 10 iterations for thread %d is %d\n",*thread, total);
 }
-
+```
 
 
 //Output tested on: https://www.onlinegdb.com/online_bash_shell
