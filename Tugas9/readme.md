@@ -1,8 +1,16 @@
 ## Tugas9
 
+- [Proses instalasi](#install-gcc-g++)
+- [Fork01](#fork01)
+- [Fork02](#fork02)
+- [Fork03](#fork03)
+
+
 - Buat tulisan tentang konsep fork dan implementasinya dengan menggunakan bahasa pemrograman C! (minimal 2 paragraf disertai dengan gambar)
 - Akses dan clonning repo : https://github.com/ferryastika/operatingsystem.git
 - Deskripsikan dan visualisasikan pohon proses hasil eksekusi dari kode program fork01.c, fork02.c, fork03.c,
+
+## Intstall gcc g++
 
 ![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/eb152342-e3bd-456e-b238-d876eb4b35db)
 lalu masuk ke superuser dengan mengetikan su -
@@ -65,7 +73,7 @@ return 0;
 lalu untuk keluar krtikan ctrl x untuk exit lalu pilih y untuk mrngrsave dan enter 
 lalu ketikan Perintah g++ fork01.cpp -o forko1.exe
 perintah tersebut untuk mengkompilasi program C++ yang disebut "fork01.cpp" menggunakan compiler g++ dan memberikan output dengan nama "fork01".
-lalu ketikan ./fork01.exe untuk menjalankan program tersebut
+lalu ketikan ./fork01 untuk menjalankan program tersebut
 Analisa
 
 Output program menampilkan ID proses (PID) mereka sendiri dan nilai variabel x dalam loop tak terbatas. Program menggunakan system call fork() untuk membuat proses saat ini, dan menciptakan child process.
@@ -107,7 +115,9 @@ int main(void) {
 	return 0;
 }
 ```
-lalu jalankan seperti contoh fork01
+lalu jalankan seperti contoh fork01 <br>
+Output program menampilkan ID proses (PID) mereka sendiri dan nilai variabel x dalam loop tak terbatas. Program menggunakan system call fork() untuk membuat proses saat ini, dan menciptakan child process.
+
 ## fork03
 
 ![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/a4e20de9-fcb6-4717-9e6c-42b33fbef611)
@@ -115,7 +125,7 @@ lalu jalankan seperti contoh fork01
 ![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/6fe30bdc-6ed4-4bb7-8464-a40fe63f24a4)
 
 
-ketikan nano fork02.cpp 
+ketikan nano fork03.cpp 
 lalu ketikan kode berikut :
 
 ```
@@ -138,12 +148,13 @@ int main(void) {
 	}
 	return 0;
 }
-Analisa
 ```
+
+
+Analisa
+
 Output program diatas melakukan proses forking secara looping (berulang) sebanyak 5 kali, yang menghasilkan proses-proses baru dengan pesan yang mencatat ID proses (PID) masing-masing. Adanya beberapa PID yang berulang menandakan bahwa parent process melakukan fork beberapa kali, menghasilkan proses-proses child dengan PID yang sama.
 
 
 
-![dbn5](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/b28906ad-60cb-49fd-8b82-eafa3027b87b)
-![dbn8](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/a53d3bb6-7733-41af-a9a2-cc349f14737f)
 
