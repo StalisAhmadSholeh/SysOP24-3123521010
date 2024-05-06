@@ -10,7 +10,7 @@
 ## cloning
 
 Langkah pertama yaitu clone terlebih dahulu ke github dengan mengetik git clone https://github.com/ferryastika/operatingsystem.git
-
+<br>lalu masuk ke directory operatingsystem dengan menggunakan perintah cd operatingsystem lalu jalankan perintah  yang ada pada soal
 
 ## forking 
 
