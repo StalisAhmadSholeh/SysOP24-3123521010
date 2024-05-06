@@ -1,6 +1,6 @@
 ## Tugas9
 
-- [Install gcc](#install-gcc)
+- [Install](#install)
 - [Fork01](#fork01)
 - [Fork02](#fork02)
 - [Fork03](#fork03)
@@ -10,7 +10,7 @@
 - Akses dan clonning repo : https://github.com/ferryastika/operatingsystem.git
 - Deskripsikan dan visualisasikan pohon proses hasil eksekusi dari kode program fork01.c, fork02.c, fork03.c,
 
-## Intstall gcc
+## Intstall
 
 ![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/eb152342-e3bd-456e-b238-d876eb4b35db)
 lalu masuk ke superuser dengan mengetikan su -
