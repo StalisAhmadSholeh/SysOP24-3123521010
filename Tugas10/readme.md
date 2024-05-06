@@ -10,9 +10,6 @@
 ## cloning
 
 Langkah pertama yaitu clone terlebih dahulu ke github dengan mengetik git clone https://github.com/ferryastika/operatingsystem.git
-lalu masuk ke directory operatingsystem dengan mengetik cd operatingsyystem lalu menjalankan prooses forking dengan mengetikan perintah ./forking, Perintah g++ forking.c -o forking adalah perintah untuk mengompilasi file sumber C yang disebut forking.c menggunakan compiler g++ dan menghasilkan executable dengan nama forking.exe.  untuk orphan dan zombie proses nya sama 
-![pf1](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/59f3882e-6622-46cc-a798-720ed9364e05)
-![pf2](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/160a63ae-4c49-41c7-bbbc-f30d62b00ca2)
 
 
 ## forking 
