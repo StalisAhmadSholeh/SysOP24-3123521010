@@ -1,6 +1,7 @@
 ## SIKLUS CPU - PERAN BAHASA PEMROGRAMAN DAN COMPILER
 
 - [Siklus CPU](#siklus-cpu)
+- [ Peran Bahasa Pemrograman dan Compiler](#peran-bahasa-pemrograman-dan-compiler)
 
 1.Buatlah presentasi langkah demi langkah tentang siklus CPU (fetch,decode,execute) utk mengeksekusi sebuah program. Jelaskan juga peran dari Bahasa pemrograman dan compiler, begitu juga dengan peran dari Sistem Operaso. Gunakan referensi : [Video referensi 1](https://www.youtube.com/watch?v=Z5JC9Ve1sfI) dan [Video referensi 2](https://www.youtube.com/watch?v=jFDMZpkUWCw)
 
@@ -112,6 +113,7 @@ jam menunjukan pada click 2,  CPU mengeksekusi intruksi perhitungan program seka
 
 
 
+## Peran Bahasa Pemrograman dan Compiler
 
 
 
