@@ -1,19 +1,93 @@
-## Tugas10
+## TUGAS 10 FORKING, ORPHAN, ZOMBIE - TUGAS MENERJEMAHKAN
 
--[forking, orphan, zombi](#cloning)
+[forking, orphan, zombi](#cloning)
+- [forking](#forking)
+- [orphan](#orphan)
+- [zombie](#zombie)
 
-
--[Producer Consumen Problem in C](#producer-consumen)
+[Producer Consumen Problem in C](#producer-consumen)
 
 ## cloning
 
 Langkah pertama yaitu clone terlebih dahulu ke github dengan mengetik git clone https://github.com/ferryastika/operatingsystem.git
-lalu masuk ke directory operatingsystem dengan mengetik cd operatingsyystem lalu menjalankan prooses forking dengan mengetikan perintah ./forking.exe, Perintah g++ forking.c -o forking.exe adalah perintah untuk mengompilasi file sumber C yang disebut forking.c menggunakan compiler g++ dan menghasilkan executable dengan nama forking.exe.  untuk orphan dan zombie proses nya sama 
+lalu masuk ke directory operatingsystem dengan mengetik cd operatingsyystem lalu menjalankan prooses forking dengan mengetikan perintah ./forking, Perintah g++ forking.c -o forking adalah perintah untuk mengompilasi file sumber C yang disebut forking.c menggunakan compiler g++ dan menghasilkan executable dengan nama forking.exe.  untuk orphan dan zombie proses nya sama 
 ![pf1](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/59f3882e-6622-46cc-a798-720ed9364e05)
 ![pf2](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/160a63ae-4c49-41c7-bbbc-f30d62b00ca2)
 
+
+## forking 
+
+
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/cc673bd1-d3de-4201-afd0-2912bd1530fb)
+```
+
+```
+
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/76d15469-5439-445f-a445-1bba8299fefe)
+
+
+## orphan
+
+ketikan program berikut :
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/07605afa-10be-4035-b9cd-67c17bd15faf)
+```
+#include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
+
+int main()
+{
+	// fork() Create a child process
+
+	int pid = fork();
+	if (pid > 0)
+	{
+		//getpid() returns process id
+		// while getppid() will return parent process id
+		printf("Parent process\n");
+		printf("ID : %d\n\n",getpid());
+	}
+	else if (pid == 0)
+	{
+		printf("Child process\n");
+		// getpid() will return process id of child process
+		printf("ID: %d\n",getpid());
+		// getppid() will return parent process id of child process
+		printf("Parent -ID: %d\n\n",getppid());
+
+		sleep(10);
+
+		// At this time parent process has finished.
+		// So if u will check parent process id 
+		// it will show different process id
+		printf("\nChild process \n");
+		printf("ID: %d\n",getpid());
+		printf("Parent -ID: %d\n",getppid());
+	}
+	else
+	{
+		printf("Failed to create child process");
+	}
+	
+	return 0;
+}
+
+/* https://www.includehelp.com/c-programs/orphan-process.aspx */
+```
+lalu masukan perintah
+<br> lalu masukan perintah g++ orphan.c -o orphan
+untuk menjalankan  ketikan ./orphan
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/e877ba99-2442-4fdd-9c4a-577b86692f98)
 orphan.c output program tersebut yaitu menjalankan Parent process dan Child process
+
+## zombie
+
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/89f684da-2b58-4984-a224-acf2e8a85fd9)
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/282a1280-507f-4a8f-9290-29b06f742726)
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/d87c19ef-47bc-423f-9fba-7833d186bc55)
+
 zombie.c output program tersebut yaitu Program ini membuat proses menggunakan fork(), dan jika proses tersebut parent process, maka ia akan tidur selama 60 detik (sleep(60)). Namun, jika proses tersebut adalah child process, maka program akan keluar secara langsung
+
 
 ## Producer Consumen
 
