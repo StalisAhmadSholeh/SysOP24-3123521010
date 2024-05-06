@@ -1,10 +1,10 @@
 ## SIKLUS CPU - PERAN BAHASA PEMROGRAMAN DAN COMPILER
 
-- [Siklus CPU](#soal1)
+- [Siklus CPU](#siklus-cpu)
 
 1.Buatlah presentasi langkah demi langkah tentang siklus CPU (fetch,decode,execute) utk mengeksekusi sebuah program. Jelaskan juga peran dari Bahasa pemrograman dan compiler, begitu juga dengan peran dari Sistem Operaso. Gunakan referensi : [Video referensi 1](https://www.youtube.com/watch?v=Z5JC9Ve1sfI) dan [Video referensi 2](https://www.youtube.com/watch?v=jFDMZpkUWCw)
 
-## Siklus CPU {#soal1}
+## Siklus CPU 
 
 
 penjelasan tentang tiga tahap utama dalam siklus fetch-execute: 
