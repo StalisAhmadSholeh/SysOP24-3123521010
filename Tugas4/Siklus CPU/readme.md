@@ -1,3 +1,9 @@
+## SIKLUS CPU - PERAN BAHASA PEMROGRAMAN DAN COMPILER
+
+## Dafar isi 
+- [Siklus CPU](#siklus-cpu)
+- [ Peran Bahasa Pemrograman dan Compiler](#peran-bahasa-pemrograman-dan-compiler)
+
 ## Tugas 
 
 1. Buatlah presentasi langkah demi langkah tentang siklus CPU (fetch,decode,execute) utk mengeksekusi sebuah program. Jelaskan juga peran dari Bahasa pemrograman dan compiler, begitu juga dengan peran dari Sistem Operaso. Gunakan referensi : Video referensi 1 dan Video referensi 2 [jawaban ada disini](#siklus-cpu)
@@ -110,3 +116,77 @@ jam menunjukan pada click 1, CPU menerjemahkan intruksi pada gambar tersebut int
 Pada click  keduapuluh1 siklus Execute :
 ![cpu (23)](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/eb396340-96b9-4e75-abe7-4b8117ae9162)
 jam menunjukan pada click 2,  CPU mengeksekusi intruksi perhitungan program sekarang kembali ke 1
+
+
+
+
+
+## Peran Bahasa Pemrograman dan Compiler
+
+
+
+Bahasa pemrograman adalah sebuah instruksi standar untuk memerintah komputer agar menjalankan fungsi tertentu. Bahasa pemrograman ini merupakan suatu himpunan dari aturan sintaksis dan semantik yang dipakai untuk mendefinisikan tata olah (program). Bahasa ini memungkinkan seorang penata olah (programmer) dapat menentukan secara persis data mana yang akan diolah oleh komputer, bagaimana data ini akan disimpan/diteruskan, dan jenis langkah apa yang secara persis akan diambil dalam berbagai situasi.
+
+Compiler adalah software komputer yang mengubah kode sumber (source code) program dalam bahasa pemrograman menjadi kode objek atau bahasa mesin yang dimengerti komputer untuk kemudian dieksekusi / Program yang mengubah program computer yang dihasilkan dari suatu bahasa pemrograman ke bahasa pemrograman lain yang berbeda.
+Dengan compiler (kompilator), programmer cukup menulis kode sumber (coding) dengan bahasa pemrograman yang dipahami manusia. Tugas kompilator adalah menerjemahkan kode program menjadi bahasa mesin berbentuk kode biner (0 dan 1).
+
+Setelah menghasilkan kode objek, komputer bisa menjalankan perintah sesuai instruksi yang ditulis oleh programmer.
+Maka bisa dibilang, compiler adalah jembatan penghubung antara programmer dan komputer atau perangkat mesin lainnya melalui perintah pemrograman.
+
+Peran Sistem Operasi
+Sistem operasi adalah perangkat lunak (software) yang dapat melakukan tugas mengontrol dan mengatur perangkat keras (hardware) sekaligus operasi dasar sistem lainnya dan juga bisa untuk menjalankan program aplikasi.
+
+Sistem operasi mempunyai peran penting di dalam suatu sistem komputer.
+Manajemen Sumber Daya Komputer
+Sebagai Aplikasi Dasar Sebuah Perangkat
+Mengoptimalkan Fungsi Sebuah Perangakt
+Mengatur Sistem Kerja Perangkat
+
+
+2. Baca dan pahami rangkuman materi OS: [Materi Intro to OS-01](https://github.com/ferryastika/OS-01)<br>
+
+## Cloning 
+3. Jalankan VM Debian anda, lalu lakukan clone https://github.com/ferryastika/flops-iops. Compile dan eksekusi sesuai petunjuk. Sesuiakan jumlah thread dengan jumlah CPU yang ada di VM Debianmu. Catat hasilnya dan jelaskan arti dari hasil ekskusi. Lakukan sebanyak 5 kali. Bandingkan hasilnya anatar temanmu. Buat Plot perbandinnga hasil untuk masing-masing PC di tiap kelompokmu. Analisa hasil percobaan tadi dan beri kesimpulan tentang IOPS dan FLOPS.
+
+ 
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/5b4d656e-8515-4493-b161-287dfd6952af)
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/13354f59-caea-4425-9bba-78b26ac534d8)
+
+	Keterangan : dengan perintah git clone akan melakukan cloning flops-iops dari GitHub ke direktori  saat ini. Lalu cd flops-iops perinitah tersebut akan masuk ke directory flops-iops
+  $ make
+  $ make clean
+  $ sudo make install
+  $ iops64 $(nproc)
+  $ flops64 $(nproc)
+ 
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/cbe29999-80d0-40b0-b578-5640bd52aa48)
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/6f0c8e81-24a7-4487-837b-500ace8d6c79)
+
+IOPS (Input/Output Operations Per Second):
+IOPS mengukur jumlah operasi masukan/keluaran (Input/Output) yang dapat dilakukan oleh sistem dalam satu detik.
+FLOPS (Floating Point Operations Per Second):
+FLOPS mengukur jumlah operasi titik mengambang (floating point) yang dapat dilakukan oleh sistem dalam satu detik.
+Kesimpulan
+Semakin tinggi nilai IOPS, semakin cepat sistem dapat memproses operasi masukan/keluaran, yang berarti kinerja sistem I/O yang lebih baik. Semakin tinggi nilai FLOPS, semakin cepat sistem dapat menyelesaikan operasi, yang berarti kinerja komputasi yang lebih baik.
+
+ 
+## Install packeage
+4. Apabila Debian VM mu masih belum terdapat packeage gcc, make dan git, lakukan instalasi dan catat setiap langkahnya!
+Untuk melakukan instalasi harus mengedit repository terlebihdahulu 
+ 
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/2785efbe-fea1-4681-b271-96d16b41633b)
+
+Perintah su yaitu untuk masuk ke rott lalu masuk ke /etc/apt# nano sources.list untuk mengedit repositori
+ 
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/9e32a3e4-14e7-4d00-8882-d2392ea0082f)
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/8494c88d-4bc3-4bb7-a9e7-208aad490ab9)
+ 
+Ketikan kode tersebut lalu crtl x untuk keluar dan save
+ 
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/175f49e9-f4d2-4719-99f8-ebfe451d88c7)
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/b11c88c9-05f8-4206-9fa0-4d128e34de9c)
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/88b7868d-13a8-4ddf-bcda-08ffdb6a65a0)
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/486ab920-27be-4cf9-a5eb-43234f79aa9d)
+Lalu lakukan apt update 
+Lalu ketik apt install (apa yang ingin di install) gcc, make dan git
+penginstalan sudah selesai
