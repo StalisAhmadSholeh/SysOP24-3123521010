@@ -5,7 +5,6 @@
 - [orphan](#orphan)
 - [zombie](#zombie)
 
-[Producer Consumen Problem in C](#producer-consumen)
 
 ## cloning
 
