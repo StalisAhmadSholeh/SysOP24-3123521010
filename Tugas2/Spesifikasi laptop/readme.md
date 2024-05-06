@@ -20,6 +20,22 @@ Jumlah Core: 2<br>
 Jumlah Thread: 4<br>
 ![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/8daba6f8-8bab-4ae9-9a14-02ffff92df87)
 
+- **Paket:** Socket 1356 FCBGA
+- **Teknologi:** 14 nm
+- **Core:** Intel(3) Core i3-6006L
+- **Kecepatan:** 2.00 GHz
+- **Keluarga:** 6
+- **Model:** E
+- **Stepping:** 3
+- **Instruksi:** MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, EM64T, VT-x, JAES, AVX, AVX2, FMA3
+- **Cache:** 
+  - L1 Data: 2 x 32 KBytes, 8-way
+  - L1 Inst.: 2 x 32 KBytes, 8-way
+  - Level 2: 2 x 256 KBytes, 4-way
+  - Level 3: 3 MBytes, 12-way
+- **Jumlah Core:** 2
+- **Jumlah Thread:** 4
+
 
 Menggunkaan mainboard Lenovo LNVNB 16 12 16 
 Menggunakan BIOS dari Lenovo 4wcn29ww 
