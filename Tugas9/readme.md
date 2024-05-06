@@ -1,6 +1,6 @@
 ## Tugas9
 
-- [Proses instalasi](#install-gcc)
+- [Install gcc](#install-gcc)
 - [Fork01](#fork01)
 - [Fork02](#fork02)
 - [Fork03](#fork03)
