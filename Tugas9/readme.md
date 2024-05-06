@@ -4,7 +4,7 @@
 - Akses dan clonning repo : https://github.com/ferryastika/operatingsystem.git
 - Deskripsikan dan visualisasikan pohon proses hasil eksekusi dari kode program fork01.c, fork02.c, fork03.c,
 
-
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/eb152342-e3bd-456e-b238-d876eb4b35db)
 lalu masuk ke superuser dengan mengetikan su -
 lalu ketik sudo apt intsall gcc g++ 
 jika terjadi eror atau tidak memiliki akses atau not sudoers file
@@ -18,9 +18,9 @@ Perintah sudo apt install gcc g++ adalah perintah yang digunakan untuk menginsta
 
 gcc adalah compiler untuk bahasa pemrograman C.
 g++ adalah compiler untuk bahasa pemrograman C++.
+![dbn2](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/b99f381f-d3cd-428f-9e45-deafed971129)
 
 ## fork01
-![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/eb152342-e3bd-456e-b238-d876eb4b35db)
 
 ![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/a394e858-308c-499a-8b77-cf4542881dca)
 
@@ -34,6 +34,8 @@ Output program ini menampilkan ID proses (PID), ID proses parent (PPID), dan ID 
 lalu ketikan nano fork01.cpp lalu ketikan program berikut :
 using namespace std;
 
+
+```
 #include <iostream>
 #include <sys/types.h>
 #include <unistd.h>
@@ -43,7 +45,6 @@ using namespace std;
 Menghasilkan suatu nilai dengan type pid_t.
 pid_t adalah type khusus untuk process id yg ekuivalen dg int
 */
-```
 int main(void) {
 	pid_t mypid;
 	uid_t myuid;
@@ -77,6 +78,9 @@ untuk yang ke 2 dan ke 3 caranya sama seperti fork1
 
 ketikan nano fork02.cpp 
 lalu ketikan kode berikut :
+
+
+```
 #include <iostream>
 #include <sys/types.h>
 #include <unistd.h>
@@ -88,7 +92,7 @@ pada unistd.h.
 Menghasilkan suatu nilai dengan type pid_t.
 pid_t adalah type khusus untuk process id yg ekuivalen dg int
 */
-```
+
 int main(void) {
 	pid_t childpid;
 	int x = 5;
@@ -113,12 +117,13 @@ lalu jalankan seperti contoh fork01
 
 ketikan nano fork02.cpp 
 lalu ketikan kode berikut :
+
+```
 #include <iostream>
 using namespace std;
 #include <sys/types.h>
 #include <unistd.h>
 
-```
 /* getpid() dan fork() adalah system call yg dideklarasikan
 pada unistd.h.
 Menghasilkan suatu nilai dengan type pid_t.
