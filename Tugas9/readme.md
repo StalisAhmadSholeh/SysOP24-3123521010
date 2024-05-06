@@ -30,20 +30,11 @@ g++ adalah compiler untuk bahasa pemrograman C++.
 
 ## fork01
 
-![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/a394e858-308c-499a-8b77-cf4542881dca)
-
-![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/aeacbfca-743b-46b4-bf04-909133523290)
-
-Analisa
-
-Output program ini menampilkan ID proses (PID), ID proses parent (PPID), dan ID pengguna (UID). Setelah mencetak informasi tersebut, program akan berhenti selama tiga detik sebelum mencetak informasi lagi. Program ini looping sebanyak tiga kali.
-
-
-lalu ketikan nano fork01.cpp lalu ketikan program berikut :
-using namespace std;
-
+ ketikan nano fork01.cpp lalu ketikan program berikut :
 
 ```
+using namespace std;
+
 #include <iostream>
 #include <sys/types.h>
 #include <unistd.h>
@@ -70,19 +61,20 @@ yang menghentikan proses ini dalam detik
 return 0;
 }
 ```
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/a394e858-308c-499a-8b77-cf4542881dca)
+
 lalu untuk keluar krtikan ctrl x untuk exit lalu pilih y untuk mrngrsave dan enter 
-lalu ketikan Perintah g++ fork01.cpp -o forko1.exe
+lalu ketikan Perintah g++ fork01.cpp -o forko1
 perintah tersebut untuk mengkompilasi program C++ yang disebut "fork01.cpp" menggunakan compiler g++ dan memberikan output dengan nama "fork01".
 lalu ketikan ./fork01 untuk menjalankan program tersebut
-Analisa
 
-Output program menampilkan ID proses (PID) mereka sendiri dan nilai variabel x dalam loop tak terbatas. Program menggunakan system call fork() untuk membuat proses saat ini, dan menciptakan child process.
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/aeacbfca-743b-46b4-bf04-909133523290)
+
+Output program ini menampilkan ID proses (PID), ID proses parent (PPID), dan ID pengguna (UID). Setelah mencetak informasi tersebut, program akan berhenti selama tiga detik sebelum mencetak informasi lagi. Program ini looping sebanyak tiga kali.
+
+
 
 ## fork02
-
-![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/6d67d26c-374a-4a10-9116-22c6960c21f9)
-![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/2058b1d0-31bc-404c-9ef2-f04695b906f4)
-untuk yang ke 2 dan ke 3 caranya sama seperti fork1 
 
 ketikan nano fork02.cpp 
 lalu ketikan kode berikut :
@@ -115,17 +107,16 @@ int main(void) {
 	return 0;
 }
 ```
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/6d67d26c-374a-4a10-9116-22c6960c21f9)
 lalu jalankan seperti contoh fork01 <br>
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/2058b1d0-31bc-404c-9ef2-f04695b906f4)
 Output program menampilkan ID proses (PID) mereka sendiri dan nilai variabel x dalam loop tak terbatas. Program menggunakan system call fork() untuk membuat proses saat ini, dan menciptakan child process.
 
 ## fork03
 
+ketikan nano fork03.cpp 
 ![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/a4e20de9-fcb6-4717-9e6c-42b33fbef611)
 
-![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/6fe30bdc-6ed4-4bb7-8464-a40fe63f24a4)
-
-
-ketikan nano fork03.cpp 
 lalu ketikan kode berikut :
 
 ```
@@ -149,7 +140,9 @@ int main(void) {
 	return 0;
 }
 ```
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/6fe30bdc-6ed4-4bb7-8464-a40fe63f24a4)
 
+lalu ketkan perintah ./fork03 untuk menjalankan program
 
 Analisa
 
