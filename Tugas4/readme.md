@@ -4,7 +4,10 @@
 
 1.Buatlah presentasi langkah demi langkah tentang siklus CPU (fetch,decode,execute) utk mengeksekusi sebuah program. Jelaskan juga peran dari Bahasa pemrograman dan compiler, begitu juga dengan peran dari Sistem Operaso. Gunakan referensi : [Video referensi 1](https://www.youtube.com/watch?v=Z5JC9Ve1sfI) dan [Video referensi 2](https://www.youtube.com/watch?v=jFDMZpkUWCw)
 
-penjelasan tentang tiga tahap utama dalam siklus fetch-execute: {#soal1}
+## Siklus CPU {#soal1}
+
+
+penjelasan tentang tiga tahap utama dalam siklus fetch-execute: 
 
 1. Fetch (Pengambilan):
 Siklus fetch adalah proses pengambilan data ke memori atau register. CPU mengambil sejumlah data atau intruksi dari memori utamakemudian menyimpan kedalam memori internal yang di sebut register
