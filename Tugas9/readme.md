@@ -1,10 +1,10 @@
 ## Tugas9
 
-Buat tulisan tentang konsep fork dan implementasinya dengan menggunakan bahasa pemrograman C! (minimal 2 paragraf disertai dengan gambar)
-Akses dan clonning repo : https://github.com/ferryastika/operatingsystem.git
-Deskripsikan dan visualisasikan pohon proses hasil eksekusi dari kode program fork01.c, fork02.c, fork03.c,
+- Buat tulisan tentang konsep fork dan implementasinya dengan menggunakan bahasa pemrograman C! (minimal 2 paragraf disertai dengan gambar)
+- Akses dan clonning repo : https://github.com/ferryastika/operatingsystem.git
+- Deskripsikan dan visualisasikan pohon proses hasil eksekusi dari kode program fork01.c, fork02.c, fork03.c,
 
-![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/eb152342-e3bd-456e-b238-d876eb4b35db)
+
 lalu masuk ke superuser dengan mengetikan su -
 lalu ketik sudo apt intsall gcc g++ 
 jika terjadi eror atau tidak memiliki akses atau not sudoers file
@@ -19,8 +19,13 @@ Perintah sudo apt install gcc g++ adalah perintah yang digunakan untuk menginsta
 gcc adalah compiler untuk bahasa pemrograman C.
 g++ adalah compiler untuk bahasa pemrograman C++.
 
-![dbn2](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/b99f381f-d3cd-428f-9e45-deafed971129)
-![dbn3](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/e89c4d7d-a7c4-4dfe-b580-6e97a83ad407)
+## fork01
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/eb152342-e3bd-456e-b238-d876eb4b35db)
+
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/a394e858-308c-499a-8b77-cf4542881dca)
+
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/aeacbfca-743b-46b4-bf04-909133523290)
+
 Analisa
 
 Output program ini menampilkan ID proses (PID), ID proses parent (PPID), dan ID pengguna (UID). Setelah mencetak informasi tersebut, program akan berhenti selama tiga detik sebelum mencetak informasi lagi. Program ini looping sebanyak tiga kali.
@@ -38,6 +43,7 @@ using namespace std;
 Menghasilkan suatu nilai dengan type pid_t.
 pid_t adalah type khusus untuk process id yg ekuivalen dg int
 */
+```
 int main(void) {
 	pid_t mypid;
 	uid_t myuid;
@@ -54,17 +60,19 @@ yang menghentikan proses ini dalam detik
 	}
 return 0;
 }
-
+```
 lalu untuk keluar krtikan ctrl x untuk exit lalu pilih y untuk mrngrsave dan enter 
 lalu ketikan Perintah g++ fork01.cpp -o forko1.exe
-perintah tersebut untuk mengkompilasi program C++ yang disebut "fork01.cpp" menggunakan compiler g++ dan memberikan output dengan nama "fork01.exe".
+perintah tersebut untuk mengkompilasi program C++ yang disebut "fork01.cpp" menggunakan compiler g++ dan memberikan output dengan nama "fork01".
 lalu ketikan ./fork01.exe untuk menjalankan program tersebut
 Analisa
 
 Output program menampilkan ID proses (PID) mereka sendiri dan nilai variabel x dalam loop tak terbatas. Program menggunakan system call fork() untuk membuat proses saat ini, dan menciptakan child process.
 
-![dbn6](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/2cbd4164-085e-45b3-9365-5ccd449f1776)
+## fork02
 
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/6d67d26c-374a-4a10-9116-22c6960c21f9)
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/2058b1d0-31bc-404c-9ef2-f04695b906f4)
 untuk yang ke 2 dan ke 3 caranya sama seperti fork1 
 
 ketikan nano fork02.cpp 
@@ -80,6 +88,7 @@ pada unistd.h.
 Menghasilkan suatu nilai dengan type pid_t.
 pid_t adalah type khusus untuk process id yg ekuivalen dg int
 */
+```
 int main(void) {
 	pid_t childpid;
 	int x = 5;
@@ -93,9 +102,14 @@ int main(void) {
 	}
 	return 0;
 }
+```
 lalu jalankan seperti contoh fork01
-![dbn4](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/3fd07bd3-7c77-4524-87de-d40b10ca5b08)
-![dbn7](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/68d3234a-2a29-4859-bd61-d3586bb97146)
+## fork03
+
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/a4e20de9-fcb6-4717-9e6c-42b33fbef611)
+
+![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/6fe30bdc-6ed4-4bb7-8464-a40fe63f24a4)
+
 
 ketikan nano fork02.cpp 
 lalu ketikan kode berikut :
@@ -104,7 +118,7 @@ using namespace std;
 #include <sys/types.h>
 #include <unistd.h>
 
-
+```
 /* getpid() dan fork() adalah system call yg dideklarasikan
 pada unistd.h.
 Menghasilkan suatu nilai dengan type pid_t.
@@ -120,7 +134,7 @@ int main(void) {
 	return 0;
 }
 Analisa
-
+```
 Output program diatas melakukan proses forking secara looping (berulang) sebanyak 5 kali, yang menghasilkan proses-proses baru dengan pesan yang mencatat ID proses (PID) masing-masing. Adanya beberapa PID yang berulang menandakan bahwa parent process melakukan fork beberapa kali, menghasilkan proses-proses child dengan PID yang sama.
 
 
