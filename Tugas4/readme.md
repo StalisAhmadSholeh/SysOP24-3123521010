@@ -1,7 +1,15 @@
 ## SIKLUS CPU - PERAN BAHASA PEMROGRAMAN DAN COMPILER
 
+## Dafar isi 
 - [Siklus CPU](#siklus-cpu)
 - [ Peran Bahasa Pemrograman dan Compiler](#peran-bahasa-pemrograman-dan-compiler)
+
+## Tugas 
+
+1. Buatlah presentasi langkah demi langkah tentang siklus CPU (fetch,decode,execute) utk mengeksekusi sebuah program. Jelaskan juga peran dari Bahasa pemrograman dan compiler, begitu juga dengan peran dari Sistem Operaso. Gunakan referensi : Video referensi 1 dan Video referensi 2 [jawaban ada di sisi](#siklus-cpu)
+2. Baca dan pahami rangkuman materi OS: Materi Intro to OS-01
+3. Jalankan VM Debian anda, lalu lakukan clone https://github.com/ferryastika/flops-iops. Compile dan eksekusi sesuai petunjuk. Sesuiakan jumlah thread dengan jumlah CPU yang ada di VM Debianmu. Catat hasilnya dan jelaskan arti dari hasil ekskusi. Lakukan sebanyak 5 kali. Bandingkan hasilnya anatar temanmu. Buat Plot perbandinnga hasil untuk masing-masing PC di tiap kelompokmu. Analisa hasil percobaan tadi dan beri kesimpulan tentang IOPS dan FLOPS. [jawaban ada di sisi](#cloning)
+4. Apabila Debian VM mu masih belum terdapat packeage gcc, make dan git, lakukan instalasi dan catat setiap langkahnya! [jawaban ada di sisi](#install-pckeage)
 
 1.Buatlah presentasi langkah demi langkah tentang siklus CPU (fetch,decode,execute) utk mengeksekusi sebuah program. Jelaskan juga peran dari Bahasa pemrograman dan compiler, begitu juga dengan peran dari Sistem Operaso. Gunakan referensi : [Video referensi 1](https://www.youtube.com/watch?v=Z5JC9Ve1sfI) dan [Video referensi 2](https://www.youtube.com/watch?v=jFDMZpkUWCw)
 
@@ -134,9 +142,10 @@ Sebagai Aplikasi Dasar Sebuah Perangkat
 Mengoptimalkan Fungsi Sebuah Perangakt
 Mengatur Sistem Kerja Perangkat
 
-[no2]: #no2
-2. Baca dan pahami rangkuman materi OS: [Materi Intro to OS-01](https://github.com/ferryastika/OS-01)
-[no3]: #no3
+
+2. Baca dan pahami rangkuman materi OS: [Materi Intro to OS-01](https://github.com/ferryastika/OS-01)<br>
+
+## Cloning 
 3. Jalankan VM Debian anda, lalu lakukan clone https://github.com/ferryastika/flops-iops. Compile dan eksekusi sesuai petunjuk. Sesuiakan jumlah thread dengan jumlah CPU yang ada di VM Debianmu. Catat hasilnya dan jelaskan arti dari hasil ekskusi. Lakukan sebanyak 5 kali. Bandingkan hasilnya anatar temanmu. Buat Plot perbandinnga hasil untuk masing-masing PC di tiap kelompokmu. Analisa hasil percobaan tadi dan beri kesimpulan tentang IOPS dan FLOPS.
 
  
@@ -161,8 +170,8 @@ Kesimpulan
 Semakin tinggi nilai IOPS, semakin cepat sistem dapat memproses operasi masukan/keluaran, yang berarti kinerja sistem I/O yang lebih baik. Semakin tinggi nilai FLOPS, semakin cepat sistem dapat menyelesaikan operasi, yang berarti kinerja komputasi yang lebih baik.
 
  
-[no4]: #no4
-4.	Apabila Debian VM mu masih belum terdapat packeage gcc, make dan git, lakukan instalasi dan catat setiap langkahnya!
+## Install packeage
+4. Apabila Debian VM mu masih belum terdapat packeage gcc, make dan git, lakukan instalasi dan catat setiap langkahnya!
 Untuk melakukan instalasi harus mengedit repository terlebihdahulu 
  
 ![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/2785efbe-fea1-4681-b271-96d16b41633b)
