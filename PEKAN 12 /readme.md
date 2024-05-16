@@ -28,6 +28,8 @@ Concurrent adalah sebuah proses yang dijalankan secara sekaligus secara berganti
 
 contoh : 
 ![image](https://github.com/StalisAhmadSholeh/SysOP24-3123521010/assets/160557634/f24e60c8-45d1-42c6-bd38-fa261ffb08df)
+
+
 dari gambar di atas Proses A menjalankan task 1 lalu ketika task 1 selesai makan akan menjalankan proses lainya 
 
 ## Paraller dan Concurent
