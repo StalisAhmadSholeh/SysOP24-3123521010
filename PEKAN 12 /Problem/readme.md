@@ -2,7 +2,7 @@
 
 1. [Bounded-Buffer Problem](#bounded-buffer-Problem)
 2. [Readers and Writers Problem](#readers-and-writers-problem)
-3. [Dining-Philosopher 's Problem](#dining-philosopher-'s-problem)
+3. [Dining-Philosopher 's Problem](#dining-philosopher-s-problem)
 
 ## Bounded-Buffer Problem
 
@@ -13,6 +13,6 @@
 ## Readers and Writers Problem
    - [Ringkasan](#ringkasan)
 
-## Dining-Philosopher 's Problem
+## Dining Philosopher s Problem
    Ini adalah pendahuluan.
 
